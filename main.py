@@ -21,17 +21,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ── Configuration ─────────────────────────────────────────────────────────────
-HOST            = os.getenv("HOST", "").rstrip("/")
-API_KEY         = os.getenv("API_KEY", "")
-API_SECRET      = os.getenv("API_SECRET", "")
-FILE_PATH       = os.getenv("FILE_PATH", "")
-CONFIG_UUID     = os.getenv("CONFIG_UUID", "")
-CLIENT_UUID     = os.getenv("CLIENT_UUID", "")
-SOURCE_LOCALE   = os.getenv("SOURCE_LOCALE", "en_us")
-RESOURCE_NAME   = os.getenv("RESOURCE_NAME", "teste.dita")
-REFERENCE_NAME  = os.getenv("REFERENCE_NAME", "")
-MULTI_PROJECT_REFERENCE = os.getenv("MULTI_PROJECT_REFERENCE", "MULTI PROJECT TEST 777")
-RESPONSE_LOG_FILE = os.getenv("RESPONSE_LOG_FILE", "responses.txt")
+HOST            = os.getenv("HOST").rstrip("/")
+API_KEY         = os.getenv("API_KEY")
+API_SECRET      = os.getenv("API_SECRET")
+FILE_PATH       = os.getenv("FILE_PATH")
+CONFIG_UUID     = os.getenv("CONFIG_UUID")
+CLIENT_UUID     = os.getenv("CLIENT_UUID")
+SOURCE_LOCALE   = os.getenv("SOURCE_LOCALE")
+RESOURCE_NAME   = os.getenv("RESOURCE_NAME")
+REFERENCE_NAME  = os.getenv("REFERENCE_NAME")
+MULTI_PROJECT_REFERENCE = os.getenv("MULTI_PROJECT_REFERENCE")
+RESPONSE_LOG_FILE = os.getenv("RESPONSE_LOG_FILE")
 
 # ── Validation ────────────────────────────────────────────────────────────────
 def validate_config():
